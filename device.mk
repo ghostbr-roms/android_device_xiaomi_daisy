@@ -166,3 +166,13 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+    
+    
+# Preopt SystemUI
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    SystemUI
+
+# QTI performance
+PRODUCT_BOOT_JARS += \
+    QPerformance \
+    UxPerformance
