@@ -26,10 +26,10 @@ TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 
  # Inherit some common Lineage stuff.	
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/pixys/config/common_full_phone.mk)
 
  # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_daisy
+PRODUCT_NAME := pixys_daisy
 PRODUCT_DEVICE := daisy
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI A2 Lite
@@ -39,6 +39,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="daisy_sprout" \
+    DEVICE_MAINTAINER="GhostBR"
     PRODUCT_NAME="daisy_sprout" \
     PRIVATE_BUILD_DESC="daisy-user 9 PKQ1.180917.001 V10.0.14.0.PDLMIXM release-keys "
 
